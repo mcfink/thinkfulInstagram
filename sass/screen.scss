@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+.center{
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.primary-icon{
+	top: 180px;
+}
+
+.search-interface{
+	top: 310px;
+
+}
+
+.search-entry{
+	border: 3px solid #199;
+	border-radius: 12px;
+	font-size: 1.3em;
+	height: 34px;
+	box-shadow:
+		3px 3px 3px darken(#199, 20%);
+}
+
+.button{
+	width: 100px;
+	font-size: 1.3em;
+	height: 40px;
+	border-radius: 12px;
+	border: 3px solid #199;
+	box-shadow:
+		3px 3px 3px darken(#199, 20%);
+
+}
+
+.errors{
+	hr{
+		position: absolute;
+		height: 3px;
+		background-color: #199;
+		top: 380px;
+		left: 30%;
+		width: 40%;
+	}
+	.error-messages{
+		color: #D04;
+		font-family: sans-serif;
+		top: 410px;
+	}
+}

@@ -1,0 +1,1 @@
+angular.module("myInstgramSearcher",["ngAnimate"]).controller("instaController",function(r){r.errorsPresent=!1});

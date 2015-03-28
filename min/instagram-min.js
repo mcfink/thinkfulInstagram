@@ -1,0 +1,1 @@
+angular.module("myApp",["ngAnimate"]).controller("instaController",function(r){r.errorsPresent=!0,r.searchTerm=""});
