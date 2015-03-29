@@ -88,3 +88,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #D04;
   font-family: sans-serif;
   top: 410px; }
+
+.photo-result {
+  position: absolute;
+  top: 450px;
+  background-color: black; }
+  .photo-result h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.7em;
+    margin: 10px 20px; }
+
+.photos {
+  float: left;
+  padding: 10px 10px;
+  background-color: black; }
+
+.photos {
+  transition: all linear 15s; }
+
+.ng-enter.photos {
+  opacity: 0; }
+
+.ng-enter.ng-enter-active.photos {
+  opacity: 1; }
+
+.ng-enter-stagger.photos {
+  -webkit-transition-delay: 1s;
+  transition-delay: 10s; }

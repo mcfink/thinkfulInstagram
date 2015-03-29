@@ -14,7 +14,7 @@
 		<img src="/images/ng-instagram.png" alt="Instagram Searcher Logo">
 	</div>
 	<div class="center search-interface">
-		<form name="searchEntry" ng-submit="searchSubmission()">
+		<form name="searchEntry" ng-submit="searchSubmission(searchTerm)">
 			<input type="text" class="search-entry" size="40" placeholder="Please enter a tag to search" ng-model="searchTerm" required>
 			<button type="submit" class="button submit">Search!</button>
 		</form>
@@ -26,7 +26,14 @@
 			<li ng-if="searchEntry.$error.required">Please enter a search term!</li>
 		</ul>
 	</div>
-	<p>{{searchTerm}}</p>
+
+	<div class="photo-result">
+		<h1 ng-if="searching">Searching Instagram -- please wait...</h1>
+		<h1 ng-if="number">{{number}} photos found!</h1>
+		<span class="result photos" ng-repeat="photo in pictures">
+			<img ng-src="{{photo}}"></img>
+		</span>
+	</div>
 </body>
 
 </html>
