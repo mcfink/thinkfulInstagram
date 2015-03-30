@@ -13,6 +13,8 @@ angular.module('myApp', ['ngAnimate'])
 			$scope.links = [];
 			$scope.searching = true;
 
+			tag = tag.replace(/\s/g, '');
+
 			var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent";
 			$scope.url = url;
 			var request = {

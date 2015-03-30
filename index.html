@@ -30,6 +30,7 @@
 	<div class="photo-result">
 		<h1 ng-if="searching">Searching Instagram -- please wait...</h1>
 		<h1 ng-if="number">{{number}} photos found!</h1>
+		<h1 ng-if="number===0">Sorry - there were no recent pictures with that tag.</h1>
 		<span class="result photos" ng-repeat="photo in pictures">
 			<a href="{{links[$index]}}"> <img ng-src="{{photo}}"></img> </a>
 		</span>
