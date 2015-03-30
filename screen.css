@@ -105,7 +105,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: black; }
 
 .photos {
-  transition: all linear 15s; }
+  transition: all linear 2s; }
 
 .ng-enter.photos {
   opacity: 0; }

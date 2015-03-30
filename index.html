@@ -31,7 +31,7 @@
 		<h1 ng-if="searching">Searching Instagram -- please wait...</h1>
 		<h1 ng-if="number">{{number}} photos found!</h1>
 		<span class="result photos" ng-repeat="photo in pictures">
-			<img ng-src="{{photo}}"></img>
+			<a href="{{links[$index]}}"> <img ng-src="{{photo}}"></img> </a>
 		</span>
 	</div>
 </body>

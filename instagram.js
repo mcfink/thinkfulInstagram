@@ -10,6 +10,7 @@ angular.module('myApp', ['ngAnimate'])
 			$scope.searchTerm = "";
 			$scope.error_message = "";
 			$scope.pictures = [];
+			$scope.links = [];
 			$scope.searching = true;
 
 			var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent";
@@ -29,6 +30,7 @@ angular.module('myApp', ['ngAnimate'])
 				$scope.number = result.data.length;
 				for (var i = 0; i < result.data.length; i++){
 					$scope.pictures.push(result.data[i].images.low_resolution.url);
+					$scope.links.push(result.data[i].link);
 				}
 			})
 			.error(function(){
